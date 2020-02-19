@@ -1,0 +1,151 @@
+* {
+    font-family: $font;
+    font-weight: $light;
+    color: $white;
+}
+html {
+    font-size: $size;
+    font-family: $font;
+}
+body {
+    background-color: $bluest;
+    color: $white;
+}
+a {
+    color: inherit;
+    &:hover {
+        color: $blue;
+        @media (min-width:map-get($lg,min)){
+            color: $gold;
+        }
+    }
+}
+p {
+    font-family: $font;
+    font-size: $size;
+    line-height: $interline;
+}
+b, strong {
+    color: $gold;
+    font-weight: $bold;
+}
+sup {
+    color: inherit;
+}
+h1 {
+    font-size: $s32;
+    color: $gold;
+    text-transform: uppercase;
+    font-weight: $bold;
+    span {
+        font-size: calc(1em / 2.2);
+        color: inherit;
+        position: relative;
+        top: calc(1em - 2em);
+    }
+    @media (min-width:map-get($md,min)){
+        font-size: $s42;
+    }
+    @media (min-width:map-get($lg,min)) {
+        font-size: $s62;
+    }
+}
+h2 {
+    font-size: $s32;
+    color: $gold;
+    text-transform: uppercase;
+    font-weight: $bold;
+    line-height: $s32;
+    span {
+        font-size: calc(1em / 3);
+        color: inherit;
+    }
+    @media (min-width:map-get($lg,min)){
+        font-size: $s42;
+        line-height: $s32;
+    }
+}
+h3 {
+    font-size: $s22;
+    font-weight: $bold;
+}
+h5 {
+    font-size: $s22;
+    text-transform: uppercase;
+    color: $white;
+    font-weight: $bold;
+}
+mark {
+    padding: 0;
+    background-color: transparent;
+    font-size: calc(1em / 1.7);
+}
+.btn-gold {
+    border-radius: 100px;
+    color: $white;
+    background-color: $gold;
+    border: none;
+    padding: 15px 54px;
+    text-transform: uppercase;
+    box-shadow: $shadow;
+    &:hover {
+        color:$blue;
+    }
+}
+.btn-line {
+    border-radius: 100px;
+    color: $white;
+    background: transparent;
+    border: 1px solid $white;
+    padding: 15px 54px;
+    text-transform: uppercase;
+    &:hover {
+        color: $gold;
+        border-color: $gold;
+    }
+}
+.btn-more {
+    border: none;
+    color: $gold;
+    background: transparent;
+    padding: 0;
+    text-transform: uppercase;
+    &:hover {
+        color: $active;
+    }
+}
+.divider-line {
+    border: none;
+    border-bottom: 2px solid $white;
+    width: 100%;
+}
+.btn-buy {
+    position: absolute;
+    bottom: 15%;
+}
+main {
+    section:nth-child(odd) {
+        background-color: $blue;
+    }
+}
+#video-principal {
+    .modal-content {
+        position: relative;
+        background-color: transparent;
+        button{
+            position: absolute;
+            right: -10px;
+            top: -10px;
+            color: $gold;
+            background: white;
+            padding: 10px 15px;
+            border-radius: 100%;
+            span {
+                color: inherit;
+            }
+        }
+        iframe {
+            height: calc((100vh * 9) / 16);
+        }
+    }
+}

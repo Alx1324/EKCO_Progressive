@@ -1,0 +1,65 @@
+.techno {
+    .ekcopad {
+        @include backsprite($sprite, 352px);
+        background-position: 0 -700px;
+        width: 346px;
+        height: 120px;
+        margin: 0 auto 3rem;
+        transform: scale(.5);
+        @media (min-width:768px) {
+            margin-right: 0;
+            transform: scale(1);
+        }
+    }
+    .mangocook {
+        @include backsprite($sprite, 282px);
+        background-position: 0 -362px;
+        width: 286px;
+        height: 199px;
+        margin: 0 auto 3rem;
+        transform: scale(.5);
+        @media (min-width:768px) {
+            margin-left: 0;
+            transform: scale(1);
+        }
+    }
+    .silverbase {
+        @include backsprite($sprite, 352px);
+        background-position: 0 -346px;
+        width: 346px;
+        height: 107px;
+        margin: 0 auto 3rem;
+        transform: scale(.5);
+        @media (min-width:768px) {
+            margin-right: 0;
+            transform: scale(1);
+        }
+    }
+    .easyclean {
+        @include backsprite($sprite, 204px);
+        background-position: 0 0;
+        width: 204px;
+        height: 203px;
+        margin: 0 auto 3rem;
+        transform: scale(.5);
+        @media (min-width:768px) {
+            margin-left: 0;
+            transform: scale(1);
+        }
+    }
+    h3 {
+        font-size: $s32;
+    }
+    .line {
+        margin: 3rem auto;
+        border:none;
+        border-bottom: 2px solid $gold;
+    }
+    p {
+        font-size: $s22;
+        line-height: inherit;
+    }
+}
+.pad {
+    padding: 10rem 0;
+}

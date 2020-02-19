@@ -1,0 +1,10 @@
+/assets/*
+*.zip
+google4a0b17cc12ff038a.html
+*.jpg
+*.png
+*.svg
+*.mp4
+*.webm
+/node_modules/*
+*.json

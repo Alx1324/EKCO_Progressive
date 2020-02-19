@@ -1,0 +1,25 @@
+.vrecetas {
+    .row {
+        padding: 0;
+    }
+    .video-r {
+        height: calc((100vh * 9) / 16);
+        @media (min-width:768px) {
+            height: 460px;
+        }
+    }
+    h3 {
+        color: $gold;
+    }
+    hr {
+        border: none;
+        border-bottom: 2px solid white;
+        margin: 1rem auto;
+        width: 100%;
+    }
+}
+.text-52 {
+    @media (min-width:768px) {
+        font-size: 52px;
+    }
+}

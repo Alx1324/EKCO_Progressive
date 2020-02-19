@@ -1,0 +1,146 @@
+#banner {
+    margin-top: 190px;
+    @media (min-width:map-get($lg,min)) {
+        margin-top: 135px;
+    }
+    .video-content {
+        text-align: center;
+        .btn {
+            width: 100%;
+            text-transform: uppercase;
+        }
+    }
+}
+#home1 {
+    #tech {
+        margin: auto;
+        .card {
+            background: $blue;
+            border: none;
+            width: 90%;
+            margin: 2rem 1rem;
+            text-align: center;
+            padding-bottom: 2rem;
+            border-radius: 21px;
+            box-shadow: $shadow;
+            @media (min-width:map-get($md,min)) {
+                width: 45%;
+            }
+            @media (min-width:map-get($lg,min)) {
+                width: 21.6%;
+            }
+            @media (min-width:map-get($xl,min)) {
+                width: 22.1%;
+            }
+
+            .card-body {
+                padding: 1rem;
+                p {
+                    position: relative;
+                    height: 130px;
+                    width: 80%;
+                    margin: auto;
+                    @media (min-width:map-get($lg,min)) {
+                        width: 95%;
+                    }
+                    a {
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                    }
+                }
+            }
+            .ekcopad, .easyclean, .mangocook, .silverbase {
+                background-image: $sprite;
+                background-size: 150px;
+                width: 150px;
+                background-repeat: no-repeat;
+                margin: 0 auto;
+                margin-top: 3rem;
+            }
+            .ekcopad {
+                background-position: center -297px;
+                height: 51px;
+                margin-bottom: 1.9rem;
+            }
+            .mangocook {
+                background-position: center -193px;
+                height: 105px;
+                margin-bottom: 0.5rem;
+                margin-top: 1rem;
+            }
+            .silverbase {
+                background-position: center -148px;
+                height: 45px;
+                margin-bottom: 2.2rem;
+            }
+            .easyclean {
+                background-size: 90px !important;
+                background-position: center 0;
+                height: 89px;
+                margin-bottom: 1rem;
+                margin-top: 1.5rem;
+            }
+        }
+    }
+}
+
+#home2 {
+    background-color: $blue;
+    .card {
+        background: $bluest;
+        border: none;
+        width: 100%;
+        margin: 2rem 0;
+        text-align: left;
+        padding-bottom: 2rem;
+        border-radius: 21px;
+        box-shadow: $shadow;
+        .card-body {
+            padding: 0;
+            h5 {
+                text-align: center;
+                margin-bottom: 1.5rem;
+            }
+            p {
+                position: relative;
+                width: 92%;
+                padding-bottom: 50px;
+                margin: auto;
+                span {
+                    font-size: calc(1em / 2.5) ;
+                }
+                a {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                }
+            }
+        }
+        .coccion, .utensilios, .cuchillos {
+            background-image: $sprite;
+            background-size: 200px;
+            background-repeat: no-repeat;
+            margin: 0 auto;
+            margin-top: 3rem;
+        }
+        .coccion {
+            background-position: 0 -498px;
+            width: 38px;
+            height: 32px;
+            margin-bottom: 0.5rem;
+        }
+        .utensilios {
+            background-position: -38px -468px;
+            width: 23px;
+            height: 62px;
+            margin-bottom: 0.5rem;
+        }
+        .cuchillos {
+            background-position: -60px -467px;
+            width: 16px;
+            height: 62px;
+            margin-bottom: 0.5rem;
+        }
+    }
+}

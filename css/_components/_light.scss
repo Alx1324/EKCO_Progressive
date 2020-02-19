@@ -1,0 +1,34 @@
+.animelight {
+    position: relative;
+    background-color: inherit;
+    .anime {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 1;
+        overflow: hidden;
+        //animation: lighting 15s ease forwards alternate infinite;
+    }
+    #anime- {
+        &ekcopad {
+            mix-blend-mode: lighten;
+        }
+        &mangocook {
+            mix-blend-mode: screen;
+        }
+        &silverbase {
+            mix-blend-mode: screen;
+        }
+    }
+}
+
+@keyframes lighting {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

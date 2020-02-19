@@ -1,0 +1,58 @@
+/* Scss Document */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
+
+/* Constantes */
+$white: #ffffff;
+$active: #16eff5;
+$bluest: #00385f;
+$gold: #d1c388;
+$blue: #015182;
+$black: #090f21;
+$gray: #B5B5B5;
+$shadowblack:rgba($black,.45);
+$font: 'Montserrat', Lato, sans-serif;
+$interline: 19px;
+$size: 16px;
+$s22: 22px;
+$s32: 32px;
+$s42: 42px;
+$s62: 62px;
+$light: 300;
+$medium: 400;
+$bold: 700;
+$sprite: url('../assets/sprite_EKCO_Progressive.svg'),
+    url('../assets/sprite_EKCO_Progressive.png');
+$shadow: 0 10px 20px 5px $shadowblack;
+$sartenes: url('../assets/Sartenes/sprite_btn_sartenes_Ekco_progressive.png');
+$utensilios: url('../assets/Utensilios_auxiliares/Sprite_utensilios.png');
+$cuchillos: url('../assets/Cuchillos/sprite_cuchillos.png');
+$xs: (
+    min: 0px,
+    max: 575.99px
+);
+$sm: (
+    min: 576px,
+    max: 767.99px
+);
+$md: (
+    min: 768px,
+    max: 991.99px
+);
+$lg: (
+    min: 992px,
+    max: 1199.99px
+);
+$xl: (
+    min: 1200px,
+);
+
+@import '_components/generales';
+@import '_components/menu';
+@import '_components/backgroundvideo';
+@import '_components/home';
+@import '_components/sartenes';
+@import '_components/waves';
+@import '_components/footer';
+@import '_components/tech';
+@import '_components/recetas';
+@import '_components/light';

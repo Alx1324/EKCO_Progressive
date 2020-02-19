@@ -1,0 +1,68 @@
+footer {
+    div {
+        &>div:nth-child(1) {
+            @media (min-width:map-get($md,min)) {
+                border-right: 2px solid $white;
+            }
+            h2 {
+                margin-top:5rem;
+            }
+            p {
+                border-top: 2px solid $white;
+                margin-top: 1rem;
+                padding-top: 1rem;
+                @media (min-width:map-get($md,min)) {
+                    border: none;
+                }
+            }
+        }
+        &>div:nth-child(2) {
+            margin: 2rem 0;
+            form {
+                input {
+                    border-radius: 15px;
+                    height: 60px;
+                    margin: auto;
+                    @media (min-width:map-get($lg,min)){
+                        width: 70%;
+                    }
+                    &::placeholder {
+                        color: $gray;
+                    }
+                }
+            }
+        }
+    }
+}
+#legals {
+    background: $blue;
+    margin-top: 3rem;
+    padding: 15px;
+    .facebook, .twitter, .instagram, .yt {
+        background-image: $sprite;
+        background-size: 259px;
+        background-repeat: no-repeat;
+        width: 37px;
+        height: 36px;
+        margin: 0 .5rem;
+    }
+    .facebook {
+        background-position: -99px -651px;
+    }
+    .twitter {
+        background-position: -139px -651px;
+    }
+    .instagram {
+        background-position: -179px -651px;
+    }
+    .yt {
+        background-position: -219px -651px;
+    }
+    div {
+        &>div {
+            &>div:nth-child(2) {
+                padding: .5%;
+            }
+        }
+    }
+}

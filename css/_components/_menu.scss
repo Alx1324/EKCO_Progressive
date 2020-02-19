@@ -1,0 +1,230 @@
+header {
+    box-shadow: $shadow;
+    background: $bluest;
+    z-index: 4;
+    top:0;
+    nav.navbar {
+        padding: 0;
+        background: $bluest;
+        display: flex;
+        justify-content: center;
+        max-width: 1200px;
+        .navbar-brand {
+            width: 100%;
+            @media (min-width:map-get($md,min)){
+                width: 200px;
+            }
+            text-align: center;
+            margin-right: 0;
+            height: 135px;
+            transition: .2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a {
+                background-image: $sprite;
+                background-position: 0 60px;
+                background-size: 100%;
+                padding-bottom: 60px;
+                padding-left: 163px;
+                transition: .2s ease;
+            }
+        }
+        .collapse.navbar-collapse {
+            ul.navbar-nav {
+                width: 100%;
+                background: $gold;
+                @media (min-width:map-get($lg,min)) {
+                    background: transparent;
+                }
+                .nav-item {
+                    text-transform: uppercase;
+                    text-align: center;
+                    @media (min-width:map-get($lg,min)) {
+                    }
+                    .dropdown-menu {
+                        width: 100%;
+                        background: $bluest;
+                        padding: 0;
+                        border: 0;
+                        border-radius: 0;
+                        @media (min-width:map-get($lg,min)){
+                            box-shadow: $shadow;
+                            border-left:9px solid $gold;
+                        }
+                        .dropdown-item {
+                            color:$white;
+                            padding: 1rem 0;
+                            &:focus,&:hover {
+                                background-color: $blue;
+                            }
+                            &:nth-child(1):before{
+                                content: '';
+                                background-image: $sprite;
+                                background-position: 1px 55px;
+                                background-size: 100px;
+                                margin: 0 10px;
+                                padding: 0 10px;
+                            }
+                            &:nth-child(3):before{
+                                content: '';
+                                background-image: $sprite;
+                                background-position: -19px 70px;
+                                background-size: 100px;
+                                margin: 0 15.3px;
+                                padding: 7px 5.7px;
+                            }
+                            &:nth-child(5):before{
+                                content: '';
+                                background-image: $sprite;
+                                background-position: -30px 70px;
+                                background-size: 100px;
+                                margin: 0 16px;
+                                padding: 7px 4px;
+                            }
+                        }
+                        .dropdown-divider {
+                            margin: 0;
+                            border-color: $gold;
+                        }
+                    }
+                }
+            }
+        }
+        button.btn-menu {
+            border-radius:0px;
+            position:relative;
+            width:100%;
+            height:60px;
+            background-color: $gold;
+            border: none;
+            
+            &:focus {
+                    background-color: none;
+            }
+            .btn {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 50px;
+                cursor: pointer;
+                
+                span {
+                    display: block;
+                    width:100%;
+                    border-radius: 3px;
+                    height: 3px;
+                    background: white;
+                    transition: all .3s;
+                    position: relative;
+                    
+                    &:nth-child(2){
+                        width: 60%;
+                        left: 10%;
+                    }
+                    + span {
+                        margin-top:5px;
+                    }
+                }
+            }
+            .active {
+                span:nth-child(1){
+                    animation:ease .7s top forwards;
+                }
+                span:nth-child(2){
+                    animation: ease .7s scaled forwards;
+                }
+                span:nth-child(3) {
+                    animation: ease .7s bottom forwards;
+                }
+            }
+            .not-active {
+                span:nth-child(1){
+                    animation: ease .7s top-2 forwards;
+                }
+                span:nth-child(2){
+                    animation: ease .7s scaled-2 forwards;
+                }
+                span:nth-child(3) {
+                    animation: ease .7s bottom-2 forwards;
+                }
+            }
+        }
+    }
+}
+@keyframes top {
+	0% {
+		top: 0;
+		transform: rotate(0);
+	}
+	50% {
+		top: 10px;
+		transform: rotate(0);
+	}
+	100% {
+		top: 10px;
+		transform: rotate(45deg);
+	}
+}
+@keyframes top-2 {
+	0% {
+		top: 10px;
+		transform: rotate(45deg);
+	}
+	50% {
+		top: 10px;
+		transform: rotate(0deg);
+	}
+	100% {
+		top: 0;
+		transform: rotate(0deg);
+	}
+}
+@keyframes bottom {
+	0% {
+		bottom: 0;
+		transform: rotate(0);
+	}
+	50% {
+		bottom: 6.5px;
+		transform: rotate(0);
+	}
+	100% {
+		bottom: 6.5px;
+		transform: rotate(-45deg);
+	}
+}
+@keyframes bottom-2 {
+	0% {
+		bottom: 6.5px;
+		transform: rotate(-45deg);
+	}
+	50% {
+		bottom: 6.5px;
+		transform: rotate(0);
+	}
+	100% {
+		bottom: 0;
+		transform: rotate(0);
+	}
+}
+@keyframes scaled {
+	50% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(0);
+	}
+}
+@keyframes scaled-2 {
+	0% {
+		transform: scale(0);
+	}
+	50% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
